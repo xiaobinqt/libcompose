@@ -5,10 +5,10 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/docker/libcompose/docker"
-	"github.com/docker/libcompose/docker/ctx"
-	"github.com/docker/libcompose/project"
-	"github.com/docker/libcompose/project/options"
+	"github.com/xiaobinqt/libcompose/docker"
+	"github.com/xiaobinqt/libcompose/docker/ctx"
+	"github.com/xiaobinqt/libcompose/project"
+	"github.com/xiaobinqt/libcompose/project/options"
 )
 
 func init() {

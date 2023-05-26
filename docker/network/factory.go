@@ -1,9 +1,9 @@
 package network
 
 import (
-	"github.com/docker/libcompose/config"
-	composeclient "github.com/docker/libcompose/docker/client"
-	"github.com/docker/libcompose/project"
+	"github.com/xiaobinqt/libcompose/config"
+	composeclient "github.com/xiaobinqt/libcompose/docker/client"
+	"github.com/xiaobinqt/libcompose/project"
 )
 
 // DockerFactory implements project.NetworksFactory

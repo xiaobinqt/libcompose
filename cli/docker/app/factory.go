@@ -1,11 +1,11 @@
 package app
 
 import (
-	"github.com/docker/libcompose/cli/logger"
-	"github.com/docker/libcompose/docker"
-	"github.com/docker/libcompose/docker/ctx"
-	"github.com/docker/libcompose/project"
 	"github.com/urfave/cli"
+	"github.com/xiaobinqt/libcompose/cli/logger"
+	"github.com/xiaobinqt/libcompose/docker"
+	"github.com/xiaobinqt/libcompose/docker/ctx"
+	"github.com/xiaobinqt/libcompose/project"
 )
 
 // ProjectFactory is a struct that holds the app.ProjectFactory implementation.

@@ -3,9 +3,9 @@ package project
 import (
 	"golang.org/x/net/context"
 
-	"github.com/docker/libcompose/config"
-	"github.com/docker/libcompose/project/events"
-	"github.com/docker/libcompose/project/options"
+	"github.com/xiaobinqt/libcompose/config"
+	"github.com/xiaobinqt/libcompose/project/events"
+	"github.com/xiaobinqt/libcompose/project/options"
 )
 
 // APIProject defines the methods a libcompose project should implement.

@@ -1,7 +1,7 @@
 package project
 
 import (
-	"github.com/docker/libcompose/config"
+	"github.com/xiaobinqt/libcompose/config"
 	"gopkg.in/yaml.v2"
 )
 

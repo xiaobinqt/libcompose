@@ -12,20 +12,20 @@ import (
 	"github.com/docker/docker/api/types/network"
 	"github.com/docker/docker/client"
 	"github.com/docker/go-connections/nat"
-	"github.com/docker/libcompose/config"
-	"github.com/docker/libcompose/docker/auth"
-	"github.com/docker/libcompose/docker/builder"
-	composeclient "github.com/docker/libcompose/docker/client"
-	"github.com/docker/libcompose/docker/container"
-	"github.com/docker/libcompose/docker/ctx"
-	"github.com/docker/libcompose/docker/image"
-	"github.com/docker/libcompose/labels"
-	"github.com/docker/libcompose/project"
-	"github.com/docker/libcompose/project/events"
-	"github.com/docker/libcompose/project/options"
-	"github.com/docker/libcompose/utils"
-	"github.com/docker/libcompose/yaml"
 	"github.com/sirupsen/logrus"
+	"github.com/xiaobinqt/libcompose/config"
+	"github.com/xiaobinqt/libcompose/docker/auth"
+	"github.com/xiaobinqt/libcompose/docker/builder"
+	composeclient "github.com/xiaobinqt/libcompose/docker/client"
+	"github.com/xiaobinqt/libcompose/docker/container"
+	"github.com/xiaobinqt/libcompose/docker/ctx"
+	"github.com/xiaobinqt/libcompose/docker/image"
+	"github.com/xiaobinqt/libcompose/labels"
+	"github.com/xiaobinqt/libcompose/project"
+	"github.com/xiaobinqt/libcompose/project/events"
+	"github.com/xiaobinqt/libcompose/project/options"
+	"github.com/xiaobinqt/libcompose/utils"
+	"github.com/xiaobinqt/libcompose/yaml"
 )
 
 // Service is a project.Service implementations.
@@ -746,10 +746,10 @@ func (s *Service) specificiesHostPort() bool {
 	return false
 }
 
-//take in timeout flag from cli as parameter
-//return timeout if it is set,
-//else return stop_grace_period if it is set,
-//else return default 10s
+// take in timeout flag from cli as parameter
+// return timeout if it is set,
+// else return stop_grace_period if it is set,
+// else return default 10s
 func (s *Service) stopTimeout(timeout int) int {
 	DEFAULTTIMEOUT := 10
 	if timeout != 0 {

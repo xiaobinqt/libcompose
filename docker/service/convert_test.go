@@ -6,12 +6,12 @@ import (
 	"testing"
 
 	"github.com/docker/docker/api/types/container"
-	"github.com/docker/libcompose/config"
-	"github.com/docker/libcompose/docker/ctx"
-	"github.com/docker/libcompose/lookup"
-	"github.com/docker/libcompose/yaml"
 	shlex "github.com/flynn/go-shlex"
 	"github.com/stretchr/testify/assert"
+	"github.com/xiaobinqt/libcompose/config"
+	"github.com/xiaobinqt/libcompose/docker/ctx"
+	"github.com/xiaobinqt/libcompose/lookup"
+	"github.com/xiaobinqt/libcompose/yaml"
 )
 
 func TestParseCommand(t *testing.T) {

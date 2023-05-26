@@ -10,9 +10,9 @@ import (
 	"reflect"
 
 	"github.com/docker/docker/pkg/urlutil"
-	"github.com/docker/libcompose/utils"
-	composeYaml "github.com/docker/libcompose/yaml"
 	"github.com/sirupsen/logrus"
+	"github.com/xiaobinqt/libcompose/utils"
+	composeYaml "github.com/xiaobinqt/libcompose/yaml"
 	"gopkg.in/yaml.v2"
 )
 

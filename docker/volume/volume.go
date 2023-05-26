@@ -6,9 +6,9 @@ import (
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/api/types/volume"
 	"github.com/docker/docker/client"
-	"github.com/docker/libcompose/config"
-	composeclient "github.com/docker/libcompose/docker/client"
-	"github.com/docker/libcompose/project"
+	"github.com/xiaobinqt/libcompose/config"
+	composeclient "github.com/xiaobinqt/libcompose/docker/client"
+	"github.com/xiaobinqt/libcompose/project"
 	"golang.org/x/net/context"
 )
 

@@ -3,8 +3,8 @@ package project
 import (
 	"bytes"
 
-	"github.com/docker/libcompose/project/events"
 	"github.com/sirupsen/logrus"
+	"github.com/xiaobinqt/libcompose/project/events"
 )
 
 var (

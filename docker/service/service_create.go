@@ -10,13 +10,13 @@ import (
 	"github.com/docker/docker/api/types"
 	containertypes "github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/api/types/network"
-	"github.com/docker/libcompose/config"
-	composecontainer "github.com/docker/libcompose/docker/container"
-	"github.com/docker/libcompose/labels"
-	"github.com/docker/libcompose/project"
-	"github.com/docker/libcompose/project/events"
-	util "github.com/docker/libcompose/utils"
 	"github.com/sirupsen/logrus"
+	"github.com/xiaobinqt/libcompose/config"
+	composecontainer "github.com/xiaobinqt/libcompose/docker/container"
+	"github.com/xiaobinqt/libcompose/labels"
+	"github.com/xiaobinqt/libcompose/project"
+	"github.com/xiaobinqt/libcompose/project/events"
+	util "github.com/xiaobinqt/libcompose/utils"
 )
 
 func (s *Service) createContainer(ctx context.Context, namer Namer, oldContainer string, configOverride *config.ServiceConfig, oneOff bool) (*composecontainer.Container, error) {

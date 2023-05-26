@@ -13,8 +13,8 @@ import (
 	"github.com/docker/docker/pkg/jsonmessage"
 	"github.com/docker/docker/pkg/term"
 	"github.com/docker/docker/registry"
-	"github.com/docker/libcompose/docker/auth"
 	"github.com/sirupsen/logrus"
+	"github.com/xiaobinqt/libcompose/docker/auth"
 	"golang.org/x/net/context"
 )
 

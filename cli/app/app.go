@@ -10,21 +10,21 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/docker/libcompose/project"
-	"github.com/docker/libcompose/project/options"
-	"github.com/docker/libcompose/version"
 	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli"
+	"github.com/xiaobinqt/libcompose/project"
+	"github.com/xiaobinqt/libcompose/project/options"
+	"github.com/xiaobinqt/libcompose/version"
 )
 
 // ProjectAction is an adapter to allow the use of ordinary functions as libcompose actions.
 // Any function that has the appropriate signature can be register as an action on a codegansta/cli command.
 //
-// cli.Command{
-//		Name:   "ps",
-//		Usage:  "List containers",
-//		Action: app.WithProject(factory, app.ProjectPs),
-//	}
+//	cli.Command{
+//			Name:   "ps",
+//			Usage:  "List containers",
+//			Action: app.WithProject(factory, app.ProjectPs),
+//		}
 type ProjectAction func(project project.APIProject, c *cli.Context) error
 
 // BeforeApp is an action that is executed before any cli command.

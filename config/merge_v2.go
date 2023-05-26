@@ -5,8 +5,8 @@ import (
 	"path"
 	"strings"
 
-	"github.com/docker/libcompose/utils"
 	"github.com/sirupsen/logrus"
+	"github.com/xiaobinqt/libcompose/utils"
 )
 
 // MergeServicesV2 merges a v2 compose file into an existing set of service configs
